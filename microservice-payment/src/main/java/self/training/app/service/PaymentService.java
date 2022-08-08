@@ -5,4 +5,6 @@ import self.training.app.dto.Payment;
 public interface PaymentService {
 
     Payment getById(int id);
+
+    Payment getPaymentsWithPersonId(int personId);
 }

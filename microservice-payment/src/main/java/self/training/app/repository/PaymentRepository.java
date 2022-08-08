@@ -7,4 +7,6 @@ import self.training.app.model.PaymentDBO;
 @Repository
 public interface PaymentRepository extends JpaRepository<PaymentDBO, Integer> {
 
+    PaymentDBO findByPersonId(Integer personId);
+
 }
